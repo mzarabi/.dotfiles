@@ -64,7 +64,6 @@ _fzf_compgen_dir() {
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-# Created by `pipx` on 2025-01-15 09:44:07
 export PATH="$PATH:/Users/marcuszarabi/.local/bin"
 
 eval "$(starship init zsh)"
