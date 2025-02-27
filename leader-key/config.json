@@ -1,0 +1,78 @@
+{
+  "actions" : [
+    {
+      "key" : "t",
+      "label" : "",
+      "type" : "application",
+      "value" : "/Applications/Ghostty.app"
+    },
+    {
+      "key" : "i",
+      "label" : "",
+      "type" : "application",
+      "value" : "/Applications/IntelliJ IDEA.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "s",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        },
+        {
+          "key" : "t",
+          "label" : "",
+          "type" : "application",
+          "value" : "/Applications/Microsoft Teams.app"
+        },
+        {
+          "key" : "m",
+          "label" : "",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
+        }
+      ],
+      "key" : "m",
+      "label" : "",
+      "type" : "group"
+    },
+    {
+      "key" : "b",
+      "label" : "",
+      "type" : "application",
+      "value" : "/Applications/Zen Browser.app"
+    },
+    {
+      "key" : "d",
+      "label" : "",
+      "type" : "application",
+      "value" : "/Applications/DBeaver.app"
+    },
+    {
+      "key" : "f",
+      "label" : "",
+      "type" : "application",
+      "value" : "/System/Library/CoreServices/Finder.app"
+    },
+    {
+      "key" : "n",
+      "label" : "",
+      "type" : "application",
+      "value" : "/Applications/Obsidian.app"
+    },
+    {
+      "key" : "o",
+      "label" : "",
+      "type" : "application",
+      "value" : "/Applications/Microsoft Outlook.app"
+    },
+    {
+      "key" : "v",
+      "label" : "",
+      "type" : "application",
+      "value" : "/Applications/Visual Studio Code.app"
+    }
+  ],
+  "type" : "group"
+}
