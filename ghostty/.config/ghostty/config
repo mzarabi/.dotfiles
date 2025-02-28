@@ -13,7 +13,7 @@ quick-terminal-position = center
 unfocused-split-opacity = 0.35
 
 ### FONT ###
-font-family = Monaspace Argon Frozen
+font-family = Monaspace Krypton Frozen
 font-size = 14
 cursor-style = block_hollow
 cursor-style-blink = false
