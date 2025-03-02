@@ -1,6 +1,6 @@
 ### APPEARANCE ###
 theme = catppuccin-mocha
-macos-titlebar-style = tabs
+macos-titlebar-style = hidden
 window-padding-x = 15
 #window-padding-y = 10
 window-padding-balance = true
