@@ -50,30 +50,34 @@ alt-shift-k = 'move up'
 alt-shift-l = 'move right'
 
 
-alt-q = 'workspace 1'
-alt-w = 'workspace 2'
-alt-e = 'workspace 3'
-alt-b = 'workspace B'
-alt-c = 'workspace C'
-alt-t = 'workspace T'
-alt-m = 'workspace M'
-alt-n = 'workspace N'
+cmd-ctrl-shift-1 = 'workspace 1'
+cmd-ctrl-shift-2 = 'workspace 2'
+cmd-ctrl-shift-3 = 'workspace 3'
+cmd-ctrl-shift-4 = 'workspace 4'
+cmd-ctrl-shift-5 = 'workspace 5'
+cmd-ctrl-shift-b = 'workspace B'
+cmd-ctrl-shift-c = 'workspace C'
+cmd-ctrl-shift-t = 'workspace T'
+cmd-ctrl-shift-m = 'workspace M'
+cmd-ctrl-shift-n = 'workspace N'
 
-alt-shift-q = 'move-node-to-workspace 1'
-alt-shift-w = 'move-node-to-workspace 2'
-alt-shift-e = 'move-node-to-workspace 3'
-alt-shift-b = 'move-node-to-workspace B'
-alt-shift-c = 'move-node-to-workspace C'
-alt-shift-t = 'move-node-to-workspace T'
-alt-shift-m = 'move-node-to-workspace M'
-alt-shift-n = 'move-node-to-workspace N'
+cmd-ctrl-shift-alt-1 = 'move-node-to-workspace 1'
+cmd-ctrl-shift-alt-2 = 'move-node-to-workspace 2'
+cmd-ctrl-shift-alt-3 = 'move-node-to-workspace 3'
+cmd-ctrl-shift-alt-4 = 'move-node-to-workspace 4'
+cmd-ctrl-shift-alt-5 = 'move-node-to-workspace 5'
+cmd-ctrl-shift-alt-b = 'move-node-to-workspace B'
+cmd-ctrl-shift-alt-c = 'move-node-to-workspace C'
+cmd-ctrl-shift-alt-t = 'move-node-to-workspace T'
+cmd-ctrl-shift-alt-m = 'move-node-to-workspace M'
+cmd-ctrl-shift-alt-n = 'move-node-to-workspace N'
 
 ### MODES ###
 alt-r = 'mode resize'
 alt-s = 'mode service'
 
 
-alt-tab = 'workspace-back-and-forth'
+cmd-ctrl-shift-tab = 'workspace-back-and-forth'
 alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
 
 
@@ -151,24 +155,16 @@ if.app-id = 'com.jetbrains.intellij'
 run = "move-node-to-workspace C"
 
 [[on-window-detected]]
-if.app-id = 'com.sublimetext.4'
-run = "move-node-to-workspace C"
-
-[[on-window-detected]]
-if.app-id = 'com.jetbrains.rider'
-run = "move-node-to-workspace C"
-
-[[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = "move-node-to-workspace T"
 
 [[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
-run = "move-node-to-workspace M"
+run = "layout floating"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.teams2'
-run = "move-node-to-workspace M"
+run = "layout floating"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Outlook'

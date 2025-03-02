@@ -1,7 +1,7 @@
 ### APPEARANCE ###
 theme = catppuccin-mocha
 macos-titlebar-style = tabs
-window-padding-x = 25
+window-padding-x = 15
 #window-padding-y = 10
 window-padding-balance = true
 window-width = 100
@@ -9,7 +9,7 @@ window-height = 50
 window-save-state = always
 background-opacity = 0.8
 background-blur-radius = 40
-quick-terminal-position = center
+quick-terminal-position = right
 unfocused-split-opacity = 0.35
 
 ### FONT ###

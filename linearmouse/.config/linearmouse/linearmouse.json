@@ -1,0 +1,62 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
+  "schemes" : [
+    {
+      "scrolling" : {
+        "modifiers" : {
+          "vertical" : {
+            "option" : {
+              "type" : "preventDefault"
+            }
+          }
+        }
+      },
+      "if" : {
+        "device" : {
+          "productID" : "0x0",
+          "category" : "trackpad",
+          "vendorID" : "0x0",
+          "productName" : "Apple Internal Keyboard \/ Trackpad"
+        }
+      }
+    },
+    {
+      "pointer" : {
+        "acceleration" : 2,
+        "speed" : 0.08
+      },
+      "scrolling" : {
+        "acceleration" : {
+          "horizontal" : 2,
+          "vertical" : 0.6
+        },
+        "speed" : {
+          "vertical" : 11,
+          "horizontal" : 0.2
+        },
+        "reverse" : {
+          "vertical" : true
+        },
+        "modifiers" : {
+          "vertical" : {
+            "option" : {
+              "type" : "preventDefault"
+            }
+          }
+        }
+      },
+      "buttons" : {
+        "universalBackForward" : false
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "serialNumber" : "E46CA427A87E36AA",
+          "productName" : "MX Master 3 Mac",
+          "productID" : "0xb023"
+        }
+      }
+    }
+  ]
+}
