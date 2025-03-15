@@ -41,6 +41,7 @@ alias myip="curl https://icanhazip.com"
 alias py="python3"
 alias start-jboss="cd Dev/jboss/jboss-eap-7.3/bin && sh standalone.sh"
 alias clear="precmd() { precmd() { echo } } && clear"
+alias lg="lazygit"
 
 bindkey '^ ' autosuggest-accept
 
