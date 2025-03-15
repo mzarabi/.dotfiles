@@ -65,6 +65,8 @@ cmd-ctrl-shift-alt-b = 'move-node-to-workspace B'
 cmd-ctrl-shift-alt-c = 'move-node-to-workspace C'
 cmd-ctrl-shift-alt-t = 'move-node-to-workspace T'
 
+cmd-ctrl-shift-f = 'fullscreen'
+
 ### MODES ###
 alt-r = 'mode resize'
 alt-s = 'mode service'
@@ -144,11 +146,3 @@ run = "move-node-to-workspace C"
 [[on-window-detected]]
 if.app-id = 'com.mitchellh.ghostty'
 run = "move-node-to-workspace T"
-
-[[on-window-detected]]
-if.app-id = 'com.tinyspeck.slackmacgap'
-run = "layout floating"
-
-[[on-window-detected]]
-if.app-id = 'com.microsoft.teams2'
-run = "layout floating"
