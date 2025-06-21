@@ -1,7 +1,7 @@
 ### APPEARANCE ###
 theme = catppuccin-mocha
-macos-titlebar-style = hidden
-window-padding-x = 15
+macos-titlebar-style = tabs
+window-padding-x = 10
 #window-padding-y = 10
 window-padding-balance = true
 window-width = 100
@@ -35,7 +35,6 @@ copy-on-select = clipboard
 mouse-hide-while-typing = true
 link-url = true
 auto-update = download
-mouse-hide-while-typing = true
 initial-window = false
 quick-terminal-animation-duration = 0
 window-inherit-working-directory = false
