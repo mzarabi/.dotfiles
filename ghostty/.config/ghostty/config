@@ -13,7 +13,7 @@ quick-terminal-position = right
 unfocused-split-opacity = 0.35
 
 ### FONT ###
-font-family = Monaspace Krypton Frozen
+font-family = Monaspace Argon
 font-size = 14
 cursor-style = block_hollow
 cursor-style-blink = false
@@ -33,8 +33,5 @@ keybind = alt+down=scroll_page_lines:2
 ### EXTRAS ###
 copy-on-select = clipboard
 mouse-hide-while-typing = true
-link-url = true
-auto-update = download
-initial-window = false
 quick-terminal-animation-duration = 0
-window-inherit-working-directory = false
+confirm-close-surface=false
