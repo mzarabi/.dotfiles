@@ -1,30 +1,30 @@
 ### APPEARANCE ###
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 macos-titlebar-style = tabs
 window-padding-x = 10
-#window-padding-y = 10
+window-padding-y = 0
 window-padding-balance = true
 window-width = 100
 window-height = 50
+window-decoration = true
 window-save-state = always
 background-opacity = 0.8
-background-blur-radius = 40
-quick-terminal-position = right
+background-blur-radius = 20
 unfocused-split-opacity = 0.35
 
 ### FONT ###
 font-family = Monaspace Argon
 font-size = 14
-cursor-style = block_hollow
-cursor-style-blink = false
-cursor-invert-fg-bg = true
+#cursor-style = block_hollow
+#cursor-style-blink = false
+#cursor-invert-fg-bg = true
 
 ### KEYBINDS ###
 keybind = ctrl+alt+h=goto_split:left
 keybind = ctrl+alt+j=goto_split:bottom
 keybind = ctrl+alt+k=goto_split:top
 keybind = ctrl+alt+l=goto_split:right
-keybind = global:cmd+control+<=toggle_quick_terminal
+#keybind = global:cmd+control+<=toggle_quick_terminal
 keybind = super+r=reload_config
 keybind = alt+up=scroll_page_lines:-2
 keybind = alt+down=scroll_page_lines:2
@@ -33,5 +33,10 @@ keybind = alt+down=scroll_page_lines:2
 ### EXTRAS ###
 copy-on-select = clipboard
 mouse-hide-while-typing = true
-quick-terminal-animation-duration = 0
 confirm-close-surface=false
+
+
+### QUICK TERMINAL ###
+quick-terminal-size = 100%
+quick-terminal-animation-duration = 0
+quick-terminal-position = right
