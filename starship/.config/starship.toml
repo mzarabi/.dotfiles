@@ -49,6 +49,9 @@ deleted_style = 'bold red'
 [git_status]
 style = 'bold peach'
 
+[docker_context]
+disabled = true
+
 # Palette definitions
 [palettes.catppuccin_macchiato]
 rosewater = "#f4dbd6"

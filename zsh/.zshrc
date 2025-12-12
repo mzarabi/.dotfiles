@@ -15,9 +15,6 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# --- Powerlevel10k Theme ---
-# source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-# [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # --- Environment Variables ---
 export PATH="$PATH:/Users/marcuszarabi/.local/bin"
@@ -72,31 +69,24 @@ nvm_auto_use
 zstyle ':omz:plugins:nvm' lazy yes
 
 # --- Aliases ---
-alias reload-zsh="source ~/.zshrc"
-alias edit-zsh="code ~/.zshrc"
+alias rz="source ~/.zshrc"
+alias ez="subl ~/.zshrc"
 alias myip="curl https://icanhazip.com"
 alias py="python3"
 alias vim="nvim"
-alias brewup="brew update && brew upgrade && brew cleanup && brew doctor"
+alias brewup="brew update && brew upgrade && brew cleanup"
 alias buz="brew uninstall --zap"
 alias ls='eza --icons -F -H --group-directories-first'
 alias ll='ls -alF'
 alias tree='eza --tree --icons'
+alias lg="lazygit"
+alias lsh="lazyssh"
+alias ld="lazydocker"
+# --- Apps ---
 alias jboss="cd ~/Dev/jboss/jboss-eap-7.3/bin && sh standalone.sh"
-alias nfs="mvn verify && mvn quarkus:dev -pl nfs-service"
-alias dh="mvn verify && mvn quarkus:dev"
-
-alias nfs-local='docker-compose --file nfs-service/docker-compose.yml up -d && mvn quarkus:dev -pl nfs-service -Dquarkus.profile=local'
-alias nfs-dev='mvn quarkus:dev -pl nfs-service'
+alias dh="mvn quarkus:dev"
 
 # --- Functions ---
-killport() {
-    [ -z "$1" ] && return 1
-    local pid=$(lsof -t -i :"$1" 2>/dev/null)
-    [ -z "$pid" ] && { echo "No process on port $1" >&2; return 1; }
-    kill -9 "$pid" && echo "Killed PID $pid on port $1"
-}
-
 portcheck() {
     if [ -z "$1" ]; then
         lsof -iTCP -sTCP:LISTEN -nP
@@ -119,7 +109,6 @@ azlogs() {
     echo "Current subscription: $(az account show --query name -o tsv)"
     echo ""
 
-    # Get all container apps with their resource groups
     local container_apps=$(az containerapp list --query '[].{name:name, resourceGroup:resourceGroup, state:properties.runningStatus}' -o tsv)
 
     if [[ -z "$container_apps" ]]; then
@@ -127,7 +116,6 @@ azlogs() {
         return 1
     fi
 
-    # Convert to array and display table
     local apps=()
     local index=1
 
@@ -145,13 +133,12 @@ azlogs() {
     echo "──────────────────────────────────────────────────────────────────────────────────────"
     echo ""
 
-    # Prompt for selection
     while true; do
         echo -n "Select Container App index (1-$((index-1)), or 'q' to quit): "
         read selection
 
         if [[ "$selection" == "q" ]] || [[ "$selection" == "Q" ]]; then
-            echo "👋 Exiting azlogs..."
+            echo "Exiting azlogs..."
             return 0
         fi
 
@@ -162,7 +149,6 @@ azlogs() {
         fi
     done
 
-    # Extract selected app details (zsh arrays are 1-indexed)
     local selected_app="${apps[$selection]}"
     local app_name="${selected_app%|*}"
     local resource_group="${selected_app#*|}"
@@ -171,7 +157,6 @@ azlogs() {
     echo "Following logs for Container App: $app_name"
     echo "Resource Group: $resource_group"
 
-    # Follow logs
     az containerapp logs show \
         --name "$app_name" \
         --resource-group "$resource_group" \
@@ -252,6 +237,41 @@ azs() {
 
     echo "No subscription matched: $*"
     return 3
+}
+
+dlq() {
+  local type="$1"
+  local name="$2"
+  
+  case "$type" in
+    t)
+      az servicebus topic subscription show \
+        --resource-group rg-frac-shared-service-buses-prod \
+        --namespace-name sb-fracnordic-prod \
+        --topic-name "$name" \
+        --subscription-name nfs.nfs-service | jq '.countDetails'
+      ;;
+    q)
+      az servicebus queue show \
+        --resource-group rg-frac-shared-service-buses-prod \
+        --namespace-name sb-fracnordic-prod \
+        --name "$name" | jq '.countDetails'
+      ;;
+    *)
+      echo "Usage: dlq [t|q] <name>"
+      return 1
+      ;;
+  esac
+}
+
+nfs() {
+  local profile="${1:-dev}"
+  
+  if [[ "$profile" == "local" ]]; then
+    docker-compose --file nfs-service/docker-compose.yml up -d
+  fi
+  
+  mvn quarkus:dev -pl nfs-service -Dquarkus.profile="$profile"
 }
 
 # --- Key Bindings ---
