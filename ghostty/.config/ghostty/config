@@ -9,7 +9,7 @@ window-decoration = true
 window-save-state = always
 background-opacity = 0.95
 background-blur-radius = 10
-unfocused-split-opacity = 0.35
+unfocused-split-opacity = 0.80
 
 
 ### FONT ###
@@ -38,4 +38,4 @@ shell-integration-features = cursor,sudo,title
 quick-terminal-size = 100%
 quick-terminal-animation-duration = 0
 quick-terminal-position = top
-keybind = super+§=toggle_quick_terminal
+keybind = global:super+§=toggle_quick_terminal

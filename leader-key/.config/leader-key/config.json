@@ -1,77 +1,131 @@
 {
   "actions" : [
     {
-      "key" : "t",
-      "label" : "",
-      "type" : "application",
-      "value" : "/Applications/Ghostty.app"
+      "actions" : [
+        {
+          "key" : "h",
+          "type" : "application",
+          "value" : "/Applications/Helium.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app"
+        }
+      ],
+      "key" : "b",
+      "label" : "Browser",
+      "type" : "group"
     },
     {
-      "key" : "i",
-      "label" : "",
+      "key" : "d",
+      "type" : "application",
+      "value" : "/Applications/DBeaver.app"
+    },
+    {
+      "key" : "e",
+      "type" : "application",
+      "value" : "/Applications/Sublime Text.app"
+    },
+    {
+      "key" : "f",
+      "type" : "application",
+      "value" : "/System/Library/CoreServices/Finder.app"
+    },
+    {
+      "key" : "c",
       "type" : "application",
       "value" : "/Applications/IntelliJ IDEA.app"
     },
     {
       "actions" : [
         {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Messages.app"
+        },
+        {
           "key" : "s",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Slack.app"
         },
         {
           "key" : "t",
-          "label" : "",
           "type" : "application",
           "value" : "/Applications/Microsoft Teams.app"
-        },
-        {
-          "key" : "m",
-          "label" : "",
-          "type" : "application",
-          "value" : "/System/Applications/Messages.app"
         }
       ],
       "key" : "m",
-      "label" : "",
+      "label" : "Message",
       "type" : "group"
     },
     {
-      "key" : "b",
-      "label" : "",
-      "type" : "application",
-      "value" : "/Applications/Zen Browser.app"
-    },
-    {
-      "key" : "d",
-      "label" : "",
-      "type" : "application",
-      "value" : "/Applications/DBeaver.app"
-    },
-    {
-      "key" : "f",
-      "label" : "",
-      "type" : "application",
-      "value" : "/System/Library/CoreServices/Finder.app"
-    },
-    {
       "key" : "n",
-      "label" : "",
       "type" : "application",
-      "value" : "/Applications/Obsidian.app"
+      "value" : "/Applications/Bear.app"
     },
     {
       "key" : "o",
-      "label" : "",
       "type" : "application",
       "value" : "/Applications/Microsoft Outlook.app"
     },
     {
+      "actions" : [
+        {
+          "key" : "1",
+          "type" : "application",
+          "value" : "/Applications/1Password.app"
+        },
+        {
+          "key" : "b",
+          "type" : "application",
+          "value" : "/Applications/Bitwarden.app"
+        }
+      ],
+      "key" : "p",
+      "type" : "group"
+    },
+    {
+      "key" : "s",
+      "type" : "application",
+      "value" : "/Applications/Spotify.app"
+    },
+    {
+      "key" : "t",
+      "type" : "application",
+      "value" : "/Applications/Ghostty.app"
+    },
+    {
       "key" : "v",
-      "label" : "",
       "type" : "application",
       "value" : "/Applications/Visual Studio Code.app"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "o",
+          "type" : "application",
+          "value" : "/Applications/Microsoft Outlook.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Slack.app"
+        },
+        {
+          "key" : "t",
+          "type" : "application",
+          "value" : "/Applications/Microsoft Teams.app"
+        }
+      ],
+      "key" : "w",
+      "label" : "Work",
+      "type" : "group"
+    },
+    {
+      "key" : "z",
+      "type" : "application",
+      "value" : "/Applications/Zen.app"
     }
   ],
   "type" : "group"
