@@ -3,9 +3,26 @@
     {
       "actions" : [
         {
-          "key" : "h",
+          "key" : "s",
           "type" : "application",
-          "value" : "/Applications/Helium.app"
+          "value" : "/Applications/Spotify.app"
+        },
+        {
+          "key" : "m",
+          "type" : "application",
+          "value" : "/System/Applications/Mail.app"
+        }
+      ],
+      "key" : "a",
+      "label" : "Apps",
+      "type" : "group"
+    },
+    {
+      "actions" : [
+        {
+          "key" : "d",
+          "type" : "application",
+          "value" : "/Applications/Dia.app"
         },
         {
           "key" : "s",
@@ -18,24 +35,36 @@
       "type" : "group"
     },
     {
+      "actions" : [
+        {
+          "key" : "d",
+          "type" : "application",
+          "value" : "/Applications/DBeaver.app"
+        },
+        {
+          "key" : "i",
+          "type" : "application",
+          "value" : "/Applications/IntelliJ IDEA.app"
+        },
+        {
+          "key" : "s",
+          "type" : "application",
+          "value" : "/Applications/Sublime Text.app"
+        },
+        {
+          "key" : "v",
+          "type" : "application",
+          "value" : "/Applications/Visual Studio Code.app"
+        }
+      ],
       "key" : "d",
-      "type" : "application",
-      "value" : "/Applications/DBeaver.app"
-    },
-    {
-      "key" : "e",
-      "type" : "application",
-      "value" : "/Applications/Sublime Text.app"
+      "label" : "Dev",
+      "type" : "group"
     },
     {
       "key" : "f",
       "type" : "application",
       "value" : "/System/Library/CoreServices/Finder.app"
-    },
-    {
-      "key" : "c",
-      "type" : "application",
-      "value" : "/Applications/IntelliJ IDEA.app"
     },
     {
       "actions" : [
@@ -70,62 +99,18 @@
       "value" : "/Applications/Microsoft Outlook.app"
     },
     {
-      "actions" : [
-        {
-          "key" : "1",
-          "type" : "application",
-          "value" : "/Applications/1Password.app"
-        },
-        {
-          "key" : "b",
-          "type" : "application",
-          "value" : "/Applications/Bitwarden.app"
-        }
-      ],
-      "key" : "p",
-      "type" : "group"
-    },
-    {
-      "key" : "s",
-      "type" : "application",
-      "value" : "/Applications/Spotify.app"
-    },
-    {
       "key" : "t",
       "type" : "application",
       "value" : "/Applications/Ghostty.app"
     },
     {
-      "key" : "v",
-      "type" : "application",
-      "value" : "/Applications/Visual Studio Code.app"
-    },
-    {
-      "actions" : [
-        {
-          "key" : "o",
-          "type" : "application",
-          "value" : "/Applications/Microsoft Outlook.app"
-        },
-        {
-          "key" : "s",
-          "type" : "application",
-          "value" : "/Applications/Slack.app"
-        },
-        {
-          "key" : "t",
-          "type" : "application",
-          "value" : "/Applications/Microsoft Teams.app"
-        }
-      ],
-      "key" : "w",
-      "label" : "Work",
-      "type" : "group"
-    },
-    {
       "key" : "z",
       "type" : "application",
       "value" : "/Applications/Zen.app"
+    },
+    {
+      "type" : "command",
+      "value" : ""
     }
   ],
   "type" : "group"

@@ -1,19 +1,40 @@
 ### APPEARANCE ###
-theme = Catppuccin Mocha
+
+# Colors
+background = #0b0e14
+foreground = #bfbdb6
+cursor-color = #e6b450
+cursor-text = #0b0e14
+selection-background = #409fff
+selection-foreground = #0b0e14
+palette = 0=#11151c
+palette = 1=#ea6c73
+palette = 2=#7fd962
+palette = 3=#f9af4f
+palette = 4=#53bdfa
+palette = 5=#cda1fa
+palette = 6=#90e1c6
+palette = 7=#c7c7c7
+palette = 8=#686868
+palette = 9=#f07178
+palette = 10=#aad94c
+palette = 11=#ffb454
+palette = 12=#59c2ff
+palette = 13=#d2a6ff
+palette = 14=#95e6cb
+palette = 15=#ffffff
+
 macos-titlebar-style = tabs
-window-padding-x = 16
-window-padding-y = 16
-window-padding-balance = true
-window-padding-color = background
+window-padding-x = 8
+window-padding-y = 4
 window-decoration = true
-window-save-state = always
 background-opacity = 0.95
 background-blur-radius = 10
-unfocused-split-opacity = 0.80
+macos-window-buttons = hidden
 
 
 ### FONT ###
-font-family = Monaspace Argon
+font-family = Monaspace Krypton
 font-size = 14
 
 
@@ -22,20 +43,27 @@ keybind = super+shift+h=goto_split:left
 keybind = super+shift+j=goto_split:bottom
 keybind = super+shift+k=goto_split:up
 keybind = super+shift+l=goto_split:right
-
 keybind = super+shift+z=toggle_split_zoom
+keybind = global:super+§=toggle_quick_terminal
 
 
 ### EXTRAS ###
-copy-on-select = clipboard
 mouse-hide-while-typing = true
 confirm-close-surface=false
-shell-integration = detect
-shell-integration-features = cursor,sudo,title
+window-save-state = never
+maximize = true
 
 
 ### QUICK TERMINAL ###
 quick-terminal-size = 100%
 quick-terminal-animation-duration = 0
-quick-terminal-position = top
-keybind = global:super+§=toggle_quick_terminal
+
+# Word navigation
+keybind = opt+arrow_left=text:\x1bb
+keybind = opt+arrow_right=text:\x1bf
+keybind = opt+backspace=text:\x17
+
+# Line navigation
+keybind = cmd+arrow_left=csi:H
+keybind = cmd+arrow_right=csi:F
+keybind = cmd+backspace=text:\x15
