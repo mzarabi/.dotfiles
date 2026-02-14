@@ -64,7 +64,9 @@ alias ff="fastfetch"
 alias cat="bat"
 
 # --- Functions ---
-source ~/.config/zsh/functions.zsh
+# source ~/.config/zsh/functions.zsh
+source ~/.config/zsh/functions2.zsh
+
 
 # --- Key Bindings ---
 bindkey '^ ' autosuggest-accept

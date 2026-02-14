@@ -1,0 +1,167 @@
+schemaVersion = 1
+
+[catalogConfiguration]
+customFolders = []
+
+    [[catalogConfiguration.folderDepthOverrides]]
+    catalogIdentifier = 'TunaCore.UserFoldersCatalog'
+    depthRawValue = 1
+
+    [[catalogConfiguration.folderDepthOverrides]]
+    catalogIdentifier = 'TunaSystem.PreferencePanesCatalog'
+    depthRawValue = 1
+
+[catalogs]
+disabledIdentifiers = [
+    'Tuna.Internal.ApplicationProxyCatalog',
+    'Tuna.Internal.RecentObjectsCatalog',
+    'TunaAutomation.QuickActionsCatalog',
+    'TunaAutomation.ScriptsCatalog',
+    'TunaContacts.ContactsCatalog',
+    'TunaCore.RecentsCatalog',
+    'TunaCore.RecentsSearchCatalog',
+    'TunaCore.RunningProcessesCatalog',
+    'TunaCore.TextActionsCatalog',
+    'TunaDevices.DevicesCatalog',
+    'TunaEmoji.EmojiCatalog',
+    'TunaMedia.MediaControlsCatalog',
+    'TunaObsidian.ObsidianNotesCatalog',
+    'TunaObsidian.ObsidianSearchCatalog',
+    'TunaObsidian.ObsidianVaultsCatalog',
+    'TunaSmartLinks.SmartLinksActionsCatalog',
+    'TunaSmartLinks.SmartLinksCatalog',
+    'TunaSystem.WindowManagementCatalog',
+    'leader'
+]
+sortOrders = []
+
+    [[catalogs.disabledItemKeys]]
+    catalogIdentifier = 'TunaSystem.PreferencePanesCatalog'
+    itemKeys = [ 'ClassKitPreferencePane', 'ClassroomSettings', 'FamilySharingPrefPane' ]
+
+[extensions]
+enabledIdentifiers = [ 'com.brnbw.tuna.plugins.cleanshot', 'com.brnbw.tuna.plugins.notes', 'com.brnbw.tuna.plugins.reminders' ]
+
+[hotkeys]
+custom = []
+
+    [hotkeys.app.activate]
+    carbonKeyCode = 49
+    carbonModifiers = 2048
+
+    [hotkeys.app.leaderMode]
+    carbonKeyCode = 105
+    carbonModifiers = 0
+
+[[leaderMode.bindings]]
+key = 'f'
+url = 'tuna://run/path.%252FSystem%252FLibrary%252FCoreServices%252FFinder.app/Open'
+
+[[leaderMode.bindings]]
+key = 'm'
+label = 'Message'
+
+    [[leaderMode.bindings.children]]
+    key = 'm'
+    url = 'tuna://run/path.%252FSystem%252FApplications%252FMessages.app/Open'
+
+    [[leaderMode.bindings.children]]
+    key = 's'
+    url = 'tuna://run/path.%252FApplications%252FSlack.app/Open'
+
+    [[leaderMode.bindings.children]]
+    key = 't'
+    url = 'tuna://run/path.%252FApplications%252FMicrosoft%2520Teams.app/Open'
+
+[[leaderMode.bindings]]
+key = 'n'
+url = 'tuna://run/path.%252FApplications%252FBear.app/Open'
+
+[[leaderMode.bindings]]
+key = 'o'
+url = 'tuna://run/path.%252FApplications%252FMicrosoft%2520Outlook.app/Open'
+
+[[leaderMode.bindings]]
+key = 't'
+url = 'tuna://run/TunaCore.AllApplicationsCatalog.Ghostty/Open'
+
+[[leaderMode.bindings]]
+key = 'z'
+url = 'tuna://run/path.%252FApplications%252FZen.app/Open'
+
+[[leaderMode.bindings]]
+key = 'q'
+url = 'tuna://run/TunaAutomation.ShortcutsCatalog.Quit%20work/TunaCore.CommonActionsCatalog.Run'
+
+[[leaderMode.bindings]]
+iconPath = 'camera.circle'
+key = 'c'
+
+    [[leaderMode.bindings.children]]
+    key = 'a'
+    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Capture%20Area/TunaCore.CommonActionsCatalog.Run'
+
+    [[leaderMode.bindings.children]]
+    key = 'f'
+    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Capture%20Full%20Screen/TunaCore.CommonActionsCatalog.Run'
+
+    [[leaderMode.bindings.children]]
+    key = 'w'
+    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Capture%20Window/TunaCore.CommonActionsCatalog.Run'
+
+    [[leaderMode.bindings.children]]
+    key = 't'
+    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Capture%20Text%20(OCR)/TunaCore.CommonActionsCatalog.Run'
+
+    [[leaderMode.bindings.children]]
+    key = 'v'
+    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Record%20Screen/TunaCore.CommonActionsCatalog.Run'
+
+[[leaderMode.bindings]]
+key = 'i'
+url = 'tuna://run/path.%252FApplications%252FIntelliJ%2520IDEA.app/Open'
+
+[[leaderMode.bindings]]
+key = 'd'
+url = 'tuna://run/path.%252FApplications%252FDBeaver.app/Open'
+
+[[leaderMode.bindings]]
+key = 'e'
+url = 'tuna://run/path.%252FApplications%252FSublime%2520Text.app/Open'
+
+[[leaderMode.bindings]]
+key = 'v'
+url = 'tuna://run/path.%252FApplications%252FVisual%2520Studio%2520Code.app/Open'
+
+[[leaderMode.bindings]]
+key = 'b'
+url = 'tuna://run/TunaCore.AllApplicationsCatalog.Bruno/Open'
+
+[[leaderMode.bindings]]
+key = 's'
+url = 'tuna://run/path.%252FApplications%252FSpotify.app/Open'
+
+[settings]
+backspaceBehavior = 'deleteCharacters'
+leaderModeCheatsheetDelayMS = 1000
+mainWindowAnimationsEnabled = false
+screenPreference = 'primary'
+themeIdentifier = 'com.brnbw.tuna.themes.default'
+
+[[catalogSettings]]
+catalogIdentifier = 'TunaCore.TextActionsCatalog'
+
+    [catalogSettings.values]
+    TextActionsFileExtension = 'txt'
+
+[[catalogSettings]]
+catalogIdentifier = 'TunaEmoji.EmojiCatalog'
+
+    [catalogSettings.values]
+    EmojiSkinTone = 'default'
+
+[[catalogSettings]]
+catalogIdentifier = 'com.brnbw.tuna.themes.default'
+
+    [catalogSettings.values]
+    ThemeTint = 'system'
