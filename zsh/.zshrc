@@ -65,7 +65,7 @@ alias cat="bat"
 
 # --- Functions ---
 # source ~/.config/zsh/functions.zsh
-source ~/.config/zsh/functions2.zsh
+source ~/.config/zsh/functions.zsh
 
 
 # --- Key Bindings ---

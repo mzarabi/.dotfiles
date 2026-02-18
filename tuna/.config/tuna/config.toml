@@ -146,7 +146,7 @@ backspaceBehavior = 'deleteCharacters'
 leaderModeCheatsheetDelayMS = 1000
 mainWindowAnimationsEnabled = false
 screenPreference = 'primary'
-themeIdentifier = 'com.brnbw.tuna.themes.default'
+themeIdentifier = 'com.brnbw.tuna.themes.NormieBar'
 
 [[catalogSettings]]
 catalogIdentifier = 'TunaCore.TextActionsCatalog'
