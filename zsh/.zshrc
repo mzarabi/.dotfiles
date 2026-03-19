@@ -50,7 +50,6 @@ alias ez="subl ~/.zshrc"
 alias myip="curl https://icanhazip.com"
 alias py="python3"
 alias vim="nvim"
-alias cd="z"
 alias bup="brew update && brew upgrade && brew cleanup"
 alias bun="brew uninstall --zap"
 alias ls='eza --icons -F -H --group-directories-first'
@@ -62,6 +61,8 @@ alias ld="lazydocker"
 alias jboss="cd ~/Dev/jboss/jboss-eap-7.3/bin && sh standalone.sh"
 alias ff="fastfetch"
 alias cat="bat"
+alias mci="mvn clean install"
+alias mq="mvn quarkus:dev"
 
 # --- Functions ---
 # source ~/.config/zsh/functions.zsh

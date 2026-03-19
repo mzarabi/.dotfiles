@@ -1,16 +1,12 @@
-
-const ffContainer = (containerName) => ({ href }) => {
-  if (href.contains("file")) {
-    href = href.substr(7);
+const inContainer = (containerName) => ({ href }) => {
+  if (href.includes('file')) {
+    href.substr('7')
   }
-  return `ext+container:name=${containerName}&url=${encodeURIComponent(href)}`;
+  `ext+container:name=${containerName}&url=${encodeURIComponent(href)}`;
 }
 
 export default {
   defaultBrowser: "Zen",
-  options: {
-    logRequests: true
-  },
   rewrite: [
     {
       match: [
@@ -21,9 +17,10 @@ export default {
         "entra.microsoft.com*",
         "file:///*PaloAltoNetworks*",
         "*teams*",
-        "*atlassian*"
+        "*atlassian*",
+        "statics.teams"
       ],
-      url: ffContainer('FRAC')
+      url: inContainer('FRAC')
     },
     {
       match: [
@@ -32,14 +29,14 @@ export default {
         "*winningtemp*",
         "*omegapoint*"
       ],
-      url: ffContainer('OP')
+      url: inContainer('OP')
     },
     {
       match: [
         "*reddit*",
         "*youtube*"
       ],
-      url: ffContainer('MZ')
+      url: inContainer('MZ')
     }
   ],
 }

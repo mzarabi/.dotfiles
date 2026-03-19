@@ -1,4 +1,15 @@
 [tools]
-java = "zulu-25"
+java = "25"
 node = "24"
 maven = "3"
+
+[tool_alias]
+
+[tool_alias.java]
+
+[tool_alias.java.versions]
+25 = "zulu-25"
+17 = "zulu-17"
+11 = "zulu-11"
+8 = "zulu-8"
+21 = "zulu-21"

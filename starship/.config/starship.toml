@@ -1,48 +1,78 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+palette = "catppuccin_mocha"
+
 add_newline = false
 
 
 # Starship modules
 [character]
-success_symbol = '[➜](bold #E6B450)'
-error_symbol = '[➜](bold #FF8F40)'
+success_symbol = '[➜](green)'
+error_symbol = '[➜](green)'
 
 [git_branch]
-style = "bold #D2A6FF"
+style = "bold mauve"
 
 [git_status]
-style = 'bold #73B8FF'
+style = 'bold peach'
 
 [git_metrics]
-added_style = 'bold #7FD962'
-deleted_style = 'bold #F26D78'
+added_style = 'bold green'
+deleted_style = 'bold red'
 
 [directory]
 truncation_length = 4
-style = "bold #FFB454"
+style = "bold lavender"
 
 [package]
 disabled = true
 
 [java]
 format = 'using [(${version} )]($style)'
-style = 'bold #F07178'
+style = 'bold red'
 version_format = '${raw}'
 
 [nodejs]
 format = 'using [(${version} )]($style)'
 detect_files = ['package.json']
-style = 'bold #AAD94C'
+style = 'bold green'
 version_format = '${raw}'
 
 [python]
 format = 'using [(${version} )]($style)'
-style = 'bold #AAD94C'
+style = 'bold green'
 version_format = '${raw}'
 disabled = true
 
-
 [docker_context]
 disabled = true
+
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
