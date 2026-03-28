@@ -46,7 +46,7 @@ _fzf_compgen_dir() {
 
 # --- Aliases ---
 alias rz="source ~/.zshrc"
-alias ez="subl ~/.zshrc"
+alias ez="zed ~/.zshrc"
 alias myip="curl https://icanhazip.com"
 alias py="python3"
 alias vim="nvim"
@@ -63,6 +63,7 @@ alias ff="fastfetch"
 alias cat="bat"
 alias mci="mvn clean install"
 alias mq="mvn quarkus:dev"
+alias y="yazi"
 
 # --- Functions ---
 # source ~/.config/zsh/functions.zsh

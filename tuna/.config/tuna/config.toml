@@ -12,6 +12,10 @@ scriptsDirectories = []
     catalogIdentifier = 'TunaSystem.PreferencePanesCatalog'
     depthRawValue = 1
 
+[[catalogs.sortOrders]]
+catalogIdentifier = 'Tuna.Internal.ClipboardProxyCatalog'
+sortOrder = 'capturedAt.desc'
+
 [extensions]
 enabledIdentifiers = [
     'com.brnbw.tuna.plugins.brew',
@@ -20,114 +24,23 @@ enabledIdentifiers = [
     'com.brnbw.tuna.plugins.reminders'
 ]
 
-[hotkeys.app.activate]
-carbonKeyCode = 49
-carbonModifiers = 256
+[hotkeys]
+custom = []
 
-[hotkeys.app.leaderMode]
-carbonKeyCode = 105
-carbonModifiers = 0
+    [hotkeys.app.activate]
+    carbonKeyCode = 49
+    carbonModifiers = 256
 
-[[hotkeys.custom]]
-id = '3C91CE74-7E84-4226-A165-AE3F17BA599F'
-presentation = 'auto'
-
-    [hotkeys.custom.command]
-    actionIdentifier = 'TunaCore.CommonActionsCatalog.Run'
-    subjectIdentifier = 'TunaSystem.WindowManagementCatalog.Almost Maximize'
-
-    [hotkeys.custom.shortcut]
-    carbonKeyCode = 8
-    carbonModifiers = 2048
-
-[[hotkeys.custom]]
-id = 'A66EAF6A-D2D7-4A8B-AC1F-8DCAB23D4693'
-presentation = 'auto'
-
-    [hotkeys.custom.command]
-    actionIdentifier = 'TunaCore.CommonActionsCatalog.Run'
-    subjectIdentifier = 'TunaSystem.WindowManagementCatalog.Next Display'
-
-    [hotkeys.custom.shortcut]
-    carbonKeyCode = 37
-    carbonModifiers = 6144
-
-[[hotkeys.custom]]
-id = 'E99AA9A7-8946-44C6-8980-E17C04F48338'
-presentation = 'auto'
-
-    [hotkeys.custom.command]
-    actionIdentifier = 'TunaCore.CommonActionsCatalog.Run'
-    subjectIdentifier = 'TunaSystem.WindowManagementCatalog.Previous Display'
-
-    [hotkeys.custom.shortcut]
-    carbonKeyCode = 4
-    carbonModifiers = 6144
-
-[[hotkeys.custom]]
-id = 'FA87E508-2D00-4840-8DDC-0BF592FC4725'
-presentation = 'auto'
-
-    [hotkeys.custom.command]
-    actionIdentifier = 'TunaCore.CommonActionsCatalog.Run'
-    subjectIdentifier = 'TunaSystem.WindowManagementCatalog.Maximize'
-
-    [hotkeys.custom.shortcut]
-    carbonKeyCode = 46
-    carbonModifiers = 2048
+    [hotkeys.app.leaderMode]
+    carbonKeyCode = 105
+    carbonModifiers = 0
 
 [[leaderMode.bindings]]
 key = 'b'
 url = 'tuna://run/path.%252FApplications%252FZen.app/Open'
 
 [[leaderMode.bindings]]
-iconPath = 'camera.circle'
-key = ','
-label = 'Capture'
-
-    [[leaderMode.bindings.children]]
-    key = 'f'
-    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Capture%20Full%20Screen/TunaCore.CommonActionsCatalog.Run'
-
-    [[leaderMode.bindings.children]]
-    key = 'a'
-    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Capture%20Area/TunaCore.CommonActionsCatalog.Run'
-
-    [[leaderMode.bindings.children]]
-    key = 't'
-    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Capture%20Text%20(OCR)/TunaCore.CommonActionsCatalog.Run'
-
-    [[leaderMode.bindings.children]]
-    key = 'r'
-    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Record%20Screen/TunaCore.CommonActionsCatalog.Run'
-
-    [[leaderMode.bindings.children]]
-    key = 'w'
-    url = 'tuna://run/TunaCleanShot.CleanShotActionsCatalog.Capture%20Window/TunaCore.CommonActionsCatalog.Run'
-
-[[leaderMode.bindings]]
-iconPath = 'apple.terminal'
-key = 'd'
-label = 'Dev'
-
-    [[leaderMode.bindings.children]]
-    key = 'b'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Bruno/Open'
-
-    [[leaderMode.bindings.children]]
-    key = 'd'
-    url = 'tuna://run/path.%252FApplications%252FDBeaver.app/Open'
-
-    [[leaderMode.bindings.children]]
-    key = 's'
-    url = 'tuna://run/path.%252FApplications%252FSublime%2520Text.app/Open'
-
-    [[leaderMode.bindings.children]]
-    key = 'v'
-    url = 'tuna://run/path.%252FApplications%252FVisual%2520Studio%2520Code.app/Open'
-
-[[leaderMode.bindings]]
-key = 'e'
+key = 'o'
 url = 'tuna://run/path.%252FApplications%252FMicrosoft%2520Outlook.app/Open'
 
 [[leaderMode.bindings]]
@@ -157,7 +70,7 @@ label = 'Message'
 
 [[leaderMode.bindings]]
 key = 'n'
-url = 'tuna://run/path.%252FApplications%252FBear.app/Open'
+url = 'tuna://run/TunaCore.AllApplicationsCatalog.Bear/Open'
 
 [[leaderMode.bindings]]
 iconPath = 'person.2'
@@ -185,18 +98,6 @@ key = 't'
 url = 'tuna://run/TunaCore.AllApplicationsCatalog.Ghostty/Open'
 
 [[leaderMode.bindings]]
-key = 'p'
-url = 'tuna://run/TunaSystem.ColorToolsCatalog.Pick%20Color/TunaCore.CommonActionsCatalog.Run'
-
-[[leaderMode.bindings]]
-key = 'c'
-url = 'tuna://run/Tuna.Internal.ClipboardProxyCatalog.Clipboard%20History/Tuna.BasicActionsCatalog.Browse'
-
-[[leaderMode.bindings]]
-key = 'h'
-url = 'tuna://run/TunaSystem.WindowManagementCatalog.Hide%20All%20Windows/TunaCore.CommonActionsCatalog.Run%20in%20Background'
-
-[[leaderMode.bindings]]
 iconPath = 'bolt'
 key = 'a'
 label = 'Action'
@@ -205,7 +106,28 @@ label = 'Action'
     key = 's'
     url = 'tuna://run/TunaAutomation.SystemTasksCatalog.Sleep/TunaCore.CommonActionsCatalog.Run%20in%20Background'
 
+    [[leaderMode.bindings.children]]
+    key = 'p'
+    url = 'tuna://run/TunaSystem.ColorToolsCatalog.Pick%20Color/TunaCore.CommonActionsCatalog.Run'
+
+    [[leaderMode.bindings.children]]
+    key = 'c'
+    url = 'tuna://run/Tuna.Internal.ClipboardProxyCatalog.Clipboard%20History/Tuna.BasicActionsCatalog.Browse'
+
+[[leaderMode.bindings]]
+key = 'e'
+url = 'tuna://run/TunaCore.AllApplicationsCatalog.Zed/Open'
+
+[[leaderMode.bindings]]
+key = 'v'
+url = 'tuna://run/path.%252FApplications%252FVisual%2520Studio%2520Code.app/Open'
+
+[[leaderMode.bindings]]
+key = 'd'
+url = 'tuna://run/TunaCore.AllApplicationsCatalog.DataGrip/Open'
+
 [settings]
+activationDoublePressTrigger = 'leftCommand'
 catalogPeriodicRescanIntervalMinutes = 60
 leaderModeCheatsheetBehavior = 'never'
 leaderModeCheatsheetDelayMS = 3000
@@ -214,6 +136,8 @@ leaderModeModifierConfiguration = 'optionGroupControlSticky'
 leaderModeModifierTrigger = 'rightOption'
 leaderModeThemeStyle = 'breadcrumb'
 mainWindowAnimationsEnabled = false
+physicalHyperKeyQuickPressBehavior = 'togglesCapsLock'
+physicalHyperKeySource = 'capsLock'
 resultListNavigationBindings = 'vimStyle'
 screenPreference = 'primary'
 shelfAutoCloseWhenTasksComplete = true
@@ -243,6 +167,12 @@ catalogIdentifier = 'TunaCore.TextActionsCatalog'
 
 [[catalogSettings]]
 catalogIdentifier = 'TunaEmoji.EmojiCatalog'
+
+    [catalogSettings.values]
+    EmojiSkinTone = 'default'
+
+[[catalogSettings]]
+catalogIdentifier = 'com.brnbw.tuna.plugins.emoji'
 
     [catalogSettings.values]
     EmojiSkinTone = 'default'
