@@ -1,0 +1,85 @@
+# rcmd configuration file
+# Edit this file to customise rcmd's behaviour. Changes are picked up within a few seconds.
+# Full settings reference: run `rcmd config help`
+stages: []
+appKeyAssignments:
+  e: {app: /Applications/Zed.app, launchIfNotRunning: true, whenAlreadyFocusedAction: FollowGlobal}
+windowKeyAssignments: {}
+ignoredApps:
+- com.1password.safari
+- com.apple.BluetoothFileExchange
+- com.apple.ScreenSharing
+- com.apple.ScriptEditor2
+- com.apple.Stickies
+- com.apple.audio.AudioMIDISetup
+- com.apple.helpviewer
+- com.apple.screenshot.launcher
+- com.apple.siri.launcher
+- com.apple.stocks
+- com.sindresorhus.Hyperduck
+- com.stonerl.Thaw
+- eu.exelban.Stats
+- nl.superalloy.oss.terminal-notifier
+appsWhereRcmdIsPaused: []
+ignoredKeys: []
+triggers:
+  triggerKeys: [rcmd]
+  windowTriggerKeys: [rshift, rcmd]
+  assignKeyTriggerKeys: [rcmd, ralt]
+  hideOnFocusTriggerKeys: [rcmd, lshift]
+  enableAssignHotkey: true
+  enableHideOthersHotkey: true
+  alwaysHideOthers: false
+appSwitcher:
+  showAppSwitcher: false
+  appSwitcherOSDDelay: 350
+  appSwitcherFeatures: [runningApps]
+  switcherScreenPlacement: {position: center, offsetX: 0, offsetY: 0}
+  osdSize: {width: 400, height: 400}
+  actionKeys: {hideKey: minus, actionKey: equal, exposeKey: section, enableHideAndActionKeys: true}
+  hideOnlyFocusedAppOnMinus: true
+  appSort: name
+  appSortReverse: false
+windowSwitcher:
+  showWindowSwitcher: false
+  windowSwitcherOSDDelay: 0
+  windowSwitcherAppearance: comfortable
+  osdLook:
+    density: comfortable
+    backgroundStyle:
+      glass: {opacity: 0e+0}
+    accentColor: system
+    foregroundColor: adaptive
+    keycapColor: adaptive
+    keycapStyle: badge
+    searchBarStyle: glassy
+    cornerRadius: 1.4e+1
+    appIconSize: 3e+1
+    iconStyle: native
+    fontStyle: rounded
+    focusStyle: bar
+  windowSwitcherFeatures: [lastWindow, windows, windowActions]
+  windowSwitcherDimFocused: false
+  windowSwitcherPlacement: {mirrorAppSwitcher: true}
+  osdSize: {width: 700, height: 400}
+  actionKeys: {windowMinimizeKey: minus, windowAssignKey: equal, enableWindowMinimizeAndAssignKeys: false}
+  minimizeOnlyFocusedWindowOnMinus: true
+stageSwitcher:
+  stageTriggerKeys: [capsLock]
+  actionKeys: {stageAssignKey: equal, stageCloseKey: minus, stageRepositionKey: section, stageCloseAction: close}
+  stageReopenClosedItems: true
+  stageSwitcherOSDDelay: 80
+  showStageSwitcher: false
+  stageSwitcherPlacement: {mirrorAppSwitcher: true}
+tabCycle:
+  enableTabCycle: true
+  tabCycleScope: allWindows
+  tabCycleSearchScope: allWindows
+  tabCycleInclude: [minimized, hidden]
+  tabCycleFocusOnKeyUp: true
+  hijackCommandTab: false
+  windowCycleKey: section
+  enableWindowCycleKey: true
+  hijackWindowCycleHotkey: false
+spaces: {spaceMode: single, createMissingSpaces: true, osdOnActiveSpaceOnly: false, enableInstantSpaceSwitching: true}
+general: {whenAlreadyFocusedAction: Hide, focusBehaviour: allWindows, focusOnKeyUp: false, fuzzySearch: true, showMenubarAppsInSearch: true, hidePerAppSettings: false}
