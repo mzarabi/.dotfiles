@@ -118,13 +118,13 @@ alt-shift-l = ['join-with right', 'mode main']
 [workspace-to-monitor-force-assignment]
 1 = 'main'
 2 = 'main'
-3 = ['secondary', 'main']
+3 = ['3', 'secondary', 'main']
 4 = 'main'
 5 = 'main'
 6 = 'main'
 7 = 'main'
 8 = 'main'
-9 = 'main'
+9 = ['1', 'secondary', 'main']
 
 
 ### APP BEHAVIOR ###
@@ -153,8 +153,15 @@ run = "layout floating"
 if.app-id = 'app.zen-browser.zen'
 run = "move-node-to-workspace 1"
 [[on-window-detected]]
-if.app-id = 'com.mitchellh.ghostty'
-run = "move-node-to-workspace 2"
+if.app-id = "com.mitchellh.ghostty"
+run = [
+  # FIX: this is a workaround for https://github.com/nikitabobko/AeroSpace/issues/68
+  # this was also observed in:
+  # - https://github.com/ghostty-org/ghostty/issues/1840
+  # - https://github.com/ghostty-org/ghostty/issues/2006
+  "layout floating",
+  "move-node-to-workspace 2",
+]
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
 run = "move-node-to-workspace 3"

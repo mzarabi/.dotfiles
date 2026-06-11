@@ -8,22 +8,24 @@ window-padding-x = 8
 window-padding-y = 4
 window-decoration = true
 background-opacity = 0.90
+background-opacity-cells = true
 background-blur-radius = 10
 macos-window-buttons = hidden
 
 
 ### FONT ###
-font-family = Monaspace Krypton
+font-family = Monaspace Argon
 font-size = 14
 
 
 ### KEYBINDS ###
-keybind = super+shift+h=goto_split:left
-keybind = super+shift+j=goto_split:bottom
-keybind = super+shift+k=goto_split:up
-keybind = super+shift+l=goto_split:right
-keybind = super+shift+z=toggle_split_zoom
-keybind = global:super+§=toggle_quick_terminal
+keybind = option+shift+h=goto_split:left
+keybind = option+shift+j=goto_split:bottom
+keybind = option+shift+k=goto_split:up
+keybind = option+shift+l=goto_split:right
+keybind = option+shift+m=toggle_split_zoom
+#keybind = global:super+§=toggle_quick_terminal
+keybind = ctrl+space=text:\x00
 
 
 ### EXTRAS ###
@@ -34,7 +36,7 @@ maximize = true
 
 
 ### QUICK TERMINAL ###
-quick-terminal-size = 100%
+quick-terminal-size = 50%
 quick-terminal-animation-duration = 0
 
 # Word navigation

@@ -2,20 +2,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_ANALYTICS=1
 
-# --- Oh My Zsh ---
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME=""
-
-plugins=(
-  git
-  fzf
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-  tock
-)
-
-source $ZSH/oh-my-zsh.sh
-
 # --- Environment Variables ---
 export PATH="$HOME/.local/bin:$PATH"
 export JBOSS_HOME="$HOME/Dev/jboss/jboss-eap-7.3"
@@ -64,16 +50,23 @@ alias cat="bat"
 alias mci="mvn clean install"
 alias mq="mvn quarkus:dev"
 alias y="yazi"
+alias gst='git status'
+alias gcn!='git commit --verbose --no-edit --amend'
+
 
 # --- Functions ---
-# source ~/.config/zsh/functions.zsh
 source ~/.config/zsh/functions.zsh
+source "$HOME/repos/hertz/tooling-environment/developer-utils/sh-source/tools.sh"
 
+
+autoload -Uz compinit
+compinit
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+zstyle ':completion:*' menu select
 
 # --- Key Bindings ---
 bindkey '^ ' autosuggest-accept
-
-# autoload -Uz compinit && compinit
 
 # --- Starship ---
 precmd() { precmd() { echo "" } }

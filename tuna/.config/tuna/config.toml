@@ -1,7 +1,39 @@
 schemaVersion = 1
 
+[actionPreferences]
+objectOverrides = []
+version = 2
+
+    [[actionPreferences.typeRankings]]
+    typeID = 'com.tuna.type.application'
+
+        [[actionPreferences.typeRankings.actions]]
+        actionKey = 'Open'
+        catalogIdentifier = 'TunaCore.CommonActionsCatalog'
+
+        [[actionPreferences.typeRankings.actions]]
+        actionKey = 'Quit'
+        catalogIdentifier = 'TunaCore.CommonActionsCatalog'
+
+        [[actionPreferences.typeRankings.actions]]
+        actionKey = 'Kill'
+        catalogIdentifier = 'TunaCore.CommonActionsCatalog'
+
+        [[actionPreferences.typeRankings.actions]]
+        actionKey = 'Toggle Application'
+        catalogIdentifier = 'TunaCore.CommonActionsCatalog'
+
+        [[actionPreferences.typeRankings.actions]]
+        actionKey = 'Activate'
+        catalogIdentifier = 'TunaCore.CommonActionsCatalog'
+
+        [[actionPreferences.typeRankings.actions]]
+        actionKey = 'Reveal'
+        catalogIdentifier = 'TunaCore.CommonActionsCatalog'
+
 [catalogConfiguration]
 customFolders = []
+customItems = []
 scriptsDirectories = []
 
     [[catalogConfiguration.folderDepthOverrides]]
@@ -12,129 +44,436 @@ scriptsDirectories = []
     catalogIdentifier = 'TunaSystem.PreferencePanesCatalog'
     depthRawValue = 1
 
+[[catalogs.globalScopes]]
+catalogIdentifier = 'Tuna.EffectsCatalog'
+mode = 'none'
+selectedItemKeys = []
+
+[[catalogs.globalScopes]]
+catalogIdentifier = 'TunaEmoji.EmojiCatalog'
+mode = 'some'
+selectedItemKeys = [
+    'almost equal to',
+    'angle',
+    'approximately equal to',
+    'arrow pointing rightwards then curving downwards',
+    'arrow pointing rightwards then curving upwards',
+    'ballot box',
+    'ballot box with check',
+    'ballot box with x',
+    'ballot x',
+    'beamed eighth notes',
+    'beamed sixteenth notes',
+    'because',
+    'bitcoin sign',
+    'black centre white star',
+    'black diamond',
+    'black down pointing triangle',
+    'black four pointed star',
+    'black left pointing triangle',
+    'black right pointing triangle',
+    'black star',
+    'black telephone',
+    'black up pointing triangle',
+    'bullet',
+    'bullseye',
+    'cent sign',
+    'circled plus',
+    'circled times',
+    'circled white star',
+    'clockwise open circle arrow',
+    'contour integral',
+    'copyright sign',
+    'counterclockwise open circle arrow',
+    'cube root',
+    'currency sign',
+    'degree celsius',
+    'degree fahrenheit',
+    'degree sign',
+    'double dagger',
+    'double integral',
+    'double low 9 quotation mark',
+    'double prime',
+    'downwards arrow',
+    'downwards double arrow',
+    'downwards harpoon with barb rightwards',
+    'eighth note',
+    'element of',
+    'empty set',
+    'euro sign',
+    'fisheye',
+    'five eighths',
+    'fourth root',
+    'greater than or equal to',
+    'heavy eight teardrop spoked propeller asterisk',
+    'heavy outlined black star',
+    'hryvnia sign',
+    'identical to',
+    'increment',
+    'indian rupee sign',
+    'integral',
+    'interrobang',
+    'intersection',
+    'left double angle quote',
+    'left double quotation mark',
+    'left half black circle',
+    'left hook arrow',
+    'left right double arrow',
+    'left single angle quote',
+    'left single quotation mark',
+    'leftwards arrow',
+    'leftwards double arrow',
+    'leftwards harpoon with barb downwards',
+    'leftwards harpoon with barb upwards',
+    'leftwards two headed arrow',
+    'less than or equal to',
+    'logical and',
+    'logical or',
+    'lower right pencil',
+    'micro sign',
+    'music flat sign',
+    'music natural sign',
+    'music sharp sign',
+    'n ary product',
+    'n ary summation',
+    'nabla',
+    'north east arrow',
+    'north west arrow',
+    'not an element of',
+    'not equal to',
+    'not sign',
+    'numero sign',
+    'ohm sign',
+    'one eighth',
+    'one half',
+    'one quarter',
+    'one third',
+    'open centre black star',
+    'outlined black star',
+    'parallel to',
+    'partial differential',
+    'per mille sign',
+    'per ten thousand sign',
+    'pilcrow sign',
+    'pinwheel star',
+    'plus minus sign',
+    'pound sign',
+    'prime',
+    'proportional to',
+    'quarter note',
+    'reference mark',
+    'registered sign',
+    'right double angle quote',
+    'right double quotation mark',
+    'right half black circle',
+    'right hook arrow',
+    'right single angle quote',
+    'right single quotation mark',
+    'rightwards arrow',
+    'rightwards double arrow',
+    'rightwards harpoon with barb downwards',
+    'rightwards harpoon with barb upwards',
+    'rightwards two headed arrow',
+    'ruble sign',
+    'section sign',
+    'service mark',
+    'seven eighths',
+    'shadowed white star',
+    'single high reversed 9 quotation mark',
+    'sound recording copyright',
+    'south east arrow',
+    'south west arrow',
+    'square root',
+    'stress outlined white star',
+    'subscript equals',
+    'subscript minus',
+    'subscript plus',
+    'subset of',
+    'subset of or equal to',
+    'superscript eight',
+    'superscript five',
+    'superscript four',
+    'superscript nine',
+    'superscript one',
+    'superscript seven',
+    'superscript six',
+    'superscript three',
+    'superscript two',
+    'superscript zero',
+    'superset of',
+    'superset of or equal to',
+    'telephone location sign',
+    'therefore',
+    'three eighths',
+    'three quarters',
+    'trade mark sign',
+    'triangular bullet',
+    'triple prime',
+    'turkish lira sign',
+    'two thirds',
+    'union',
+    'up down double arrow',
+    'up tack',
+    'upwards arrow',
+    'upwards double arrow',
+    'upwards harpoon with barb rightwards',
+    'white bullet',
+    'white down pointing triangle',
+    'white four pointed star',
+    'white left pointing triangle',
+    'white right pointing triangle',
+    'white star',
+    'white up pointing triangle',
+    'won sign',
+    'yen sign'
+]
+
+[[catalogs.globalScopes]]
+catalogIdentifier = 'TunaMessages.MessagesActionsCatalog'
+mode = 'all'
+selectedItemKeys = [ 'Call', 'Compose Message', "Message Item\u2026", "Message To\u2026", 'Open in Messages' ]
+
+[[catalogs.globalScopes]]
+catalogIdentifier = 'TunaReminders.RemindersCatalog'
+mode = 'all'
+selectedItemKeys = []
+
+[[catalogs.globalScopes]]
+catalogIdentifier = 'TunaSystem.ColorToolsCatalog'
+mode = 'some'
+selectedItemKeys = [ 'Pick Color' ]
+
+[[catalogs.globalScopes]]
+catalogIdentifier = 'TunaSystem.PreferencePanesCatalog'
+mode = 'none'
+selectedItemKeys = []
+
 [[catalogs.sortOrders]]
 catalogIdentifier = 'Tuna.Internal.ClipboardProxyCatalog'
 sortOrder = 'capturedAt.desc'
 
-[extensions]
-enabledIdentifiers = [
-    'com.brnbw.tuna.plugins.brew',
-    'com.brnbw.tuna.plugins.cleanshot',
-    'com.brnbw.tuna.plugins.notes',
-    'com.brnbw.tuna.plugins.reminders'
-]
-
-[hotkeys]
-custom = []
-
-    [hotkeys.app.activate]
-    carbonKeyCode = 49
-    carbonModifiers = 256
-
-    [hotkeys.app.leaderMode]
-    carbonKeyCode = 105
-    carbonModifiers = 0
-
-[[leaderMode.bindings]]
-key = 'b'
-url = 'tuna://run/path.%252FApplications%252FZen.app/Open'
-
-[[leaderMode.bindings]]
-key = 'o'
-url = 'tuna://run/path.%252FApplications%252FMicrosoft%2520Outlook.app/Open'
-
-[[leaderMode.bindings]]
-key = 'f'
-url = 'tuna://run/path.%252FSystem%252FLibrary%252FCoreServices%252FFinder.app/Open'
-
-[[leaderMode.bindings]]
-key = 'i'
-url = 'tuna://run/path.%252FApplications%252FIntelliJ%2520IDEA.app/Open'
-
-[[leaderMode.bindings]]
-iconPath = 'message'
-key = 'm'
-label = 'Message'
-
-    [[leaderMode.bindings.children]]
-    key = 'm'
-    url = 'tuna://run/path.%252FSystem%252FApplications%252FMessages.app/Open'
-
-    [[leaderMode.bindings.children]]
-    key = 's'
-    url = 'tuna://run/path.%252FApplications%252FSlack.app/Open'
-
-    [[leaderMode.bindings.children]]
-    key = 't'
-    url = 'tuna://run/path.%252FApplications%252FMicrosoft%2520Teams.app/Open'
-
-[[leaderMode.bindings]]
-key = 'n'
-url = 'tuna://run/TunaCore.AllApplicationsCatalog.Bear/Open'
-
-[[leaderMode.bindings]]
-iconPath = 'person.2'
-key = 'q'
-label = 'Quit Work'
-
-    [[leaderMode.bindings.children]]
-    key = 'a'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Microsoft%20Teams/TunaCore.CommonActionsCatalog.Quit'
-
-    [[leaderMode.bindings.children]]
-    key = 'o'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Microsoft%20Outlook/TunaCore.CommonActionsCatalog.Quit'
-
-    [[leaderMode.bindings.children]]
-    key = 's'
-    url = 'tuna://run/TunaCore.AllApplicationsCatalog.Slack/TunaCore.CommonActionsCatalog.Quit'
-
-[[leaderMode.bindings]]
-key = 's'
-url = 'tuna://run/TunaCore.AllApplicationsCatalog.Spotify/Open'
-
-[[leaderMode.bindings]]
-key = 't'
-url = 'tuna://run/TunaCore.AllApplicationsCatalog.Ghostty/Open'
-
-[[leaderMode.bindings]]
+[[comboMode.bindings]]
 iconPath = 'bolt'
 key = 'a'
 label = 'Action'
 
-    [[leaderMode.bindings.children]]
-    key = 's'
-    url = 'tuna://run/TunaAutomation.SystemTasksCatalog.Sleep/TunaCore.CommonActionsCatalog.Run%20in%20Background'
+    [[comboMode.bindings.children]]
+    key = 'h'
+    url = 'tuna://run/TunaSystem.WindowManagementCatalog.Hide%20All%20Windows/TunaCore.CommonActionsCatalog.Run'
 
-    [[leaderMode.bindings.children]]
+    [[comboMode.bindings.children]]
+    key = 'm'
+    url = 'tuna://run/TunaSystem.WindowManagementCatalog.Hide%20All%20Except%20Frontmost/TunaCore.CommonActionsCatalog.Run'
+
+    [[comboMode.bindings.children]]
     key = 'p'
     url = 'tuna://run/TunaSystem.ColorToolsCatalog.Pick%20Color/TunaCore.CommonActionsCatalog.Run'
 
-    [[leaderMode.bindings.children]]
-    key = 'c'
-    url = 'tuna://run/Tuna.Internal.ClipboardProxyCatalog.Clipboard%20History/Tuna.BasicActionsCatalog.Browse'
+    [[comboMode.bindings.children]]
+    key = 's'
+    url = 'tuna://run/TunaAutomation.SystemTasksCatalog.Sleep/TunaCore.CommonActionsCatalog.Run'
 
-[[leaderMode.bindings]]
-key = 'e'
-url = 'tuna://run/TunaCore.AllApplicationsCatalog.Zed/Open'
+    [[comboMode.bindings.children]]
+    key = 'v'
+    url = 'tuna://run/Tuna.Internal.ClipboardProxyCatalog.Clipboard%20History/TunaCore.CommonActionsCatalog.Browse'
 
-[[leaderMode.bindings]]
-key = 'v'
-url = 'tuna://run/path.%252FApplications%252FVisual%2520Studio%2520Code.app/Open'
+[[comboMode.bindings]]
+iconPath = 'network'
+key = 'b'
+label = 'Browser'
 
-[[leaderMode.bindings]]
+    [[comboMode.bindings.children]]
+    key = 'h'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Helium/TunaCore.CommonActionsCatalog.Open'
+
+    [[comboMode.bindings.children]]
+    key = 's'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Safari/TunaCore.CommonActionsCatalog.Open'
+
+[[comboMode.bindings]]
+iconPath = 'camera'
+key = 'c'
+label = 'Capture'
+
+    [[comboMode.bindings.children]]
+    key = 'a'
+    url = 'tuna://run/TunaCleanShot.CleanShotCommandsCatalog.Capture%20Area/TunaCore.CommonActionsCatalog.Run'
+
+    [[comboMode.bindings.children]]
+    key = 'f'
+    url = 'tuna://run/TunaCleanShot.CleanShotCommandsCatalog.Capture%20Full%20Screen/TunaCore.CommonActionsCatalog.Run'
+
+    [[comboMode.bindings.children]]
+    key = 't'
+    url = 'tuna://run/TunaCleanShot.CleanShotCommandsCatalog.Capture%20Text%20(OCR)/TunaCore.CommonActionsCatalog.Run'
+
+    [[comboMode.bindings.children]]
+    key = 'v'
+    url = 'tuna://run/TunaCleanShot.CleanShotCommandsCatalog.Record%20Screen/TunaCore.CommonActionsCatalog.Run'
+
+    [[comboMode.bindings.children]]
+    key = 'w'
+    url = 'tuna://run/TunaCleanShot.CleanShotCommandsCatalog.Capture%20Window/TunaCore.CommonActionsCatalog.Run'
+
+[[comboMode.bindings]]
 key = 'd'
-url = 'tuna://run/TunaCore.AllApplicationsCatalog.DataGrip/Open'
+url = 'tuna://run/TunaCore.ApplicationsCatalog.DataGrip/Open'
+
+[[comboMode.bindings]]
+key = 'e'
+url = 'tuna://run/TunaCore.ApplicationsCatalog.Zed/Open'
+
+[[comboMode.bindings]]
+key = 'f'
+url = 'tuna://run/path.%252FSystem%252FLibrary%252FCoreServices%252FFinder.app/Open'
+
+[[comboMode.bindings]]
+key = 'i'
+url = 'tuna://run/path.%252FApplications%252FIntelliJ%2520IDEA.app/Open'
+
+[[comboMode.bindings]]
+iconPath = 'message'
+key = 'm'
+label = 'Message'
+
+    [[comboMode.bindings.children]]
+    key = 'm'
+    url = 'tuna://run/path.%252FSystem%252FApplications%252FMessages.app/Open'
+
+    [[comboMode.bindings.children]]
+    key = 'o'
+    url = 'tuna://run/path.%252FApplications%252FMicrosoft%2520Outlook.app/Open'
+
+    [[comboMode.bindings.children]]
+    key = 's'
+    url = 'tuna://run/path.%252FApplications%252FSlack.app/Open'
+
+    [[comboMode.bindings.children]]
+    key = 't'
+    url = 'tuna://run/path.%252FApplications%252FMicrosoft%2520Teams.app/Open'
+
+[[comboMode.bindings]]
+key = 'n'
+url = 'tuna://run/TunaCore.ApplicationsCatalog.Obsidian/TunaCore.CommonActionsCatalog.Open'
+
+[[comboMode.bindings]]
+key = 'o'
+url = 'tuna://run/TunaCore.ApplicationsCatalog.OpenCode/TunaCore.CommonActionsCatalog.Open'
+
+[[comboMode.bindings]]
+iconPath = 'person.2'
+key = 'q'
+label = 'Quit Work'
+
+    [[comboMode.bindings.children]]
+    key = 'a'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Microsoft%20Teams/TunaCore.CommonActionsCatalog.Quit'
+
+    [[comboMode.bindings.children]]
+    key = 'o'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Microsoft%20Outlook/TunaCore.CommonActionsCatalog.Quit'
+
+    [[comboMode.bindings.children]]
+    key = 's'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Slack/TunaCore.CommonActionsCatalog.Quit'
+
+[[comboMode.bindings]]
+key = 's'
+url = 'tuna://run/TunaCore.ApplicationsCatalog.Spotify/Open'
+
+[[comboMode.bindings]]
+key = 't'
+url = 'tuna://run/TunaCore.ApplicationsCatalog.Ghostty/Open'
+
+[[comboMode.bindings]]
+iconPath = 'person.2'
+key = 'w'
+label = 'Start Work'
+
+    [[comboMode.bindings.children]]
+    key = 'a'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Microsoft%20Teams/Open'
+
+    [[comboMode.bindings.children]]
+    key = 'o'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Microsoft%20Outlook/Open'
+
+    [[comboMode.bindings.children]]
+    key = 's'
+    url = 'tuna://run/TunaCore.ApplicationsCatalog.Slack/Open'
+
+[[comboMode.bindings]]
+key = 'z'
+url = 'tuna://run/path.%252FApplications%252FZen.app/Open'
+
+[hotkeys.app.activate]
+carbonKeyCode = 49
+carbonModifiers = 256
+
+[hotkeys.app.comboMode]
+carbonKeyCode = 105
+carbonModifiers = 0
+
+[[hotkeys.custom]]
+id = '08B9CE21-0AB9-45BF-9A7F-1F7A6BC45D1A'
+presentation = 'auto'
+
+    [hotkeys.custom.command]
+    actionIdentifier = 'TunaCore.CommonActionsCatalog.Run'
+    subjectIdentifier = 'TunaSystem.WindowManagementCatalog.Hide All Windows'
+
+    [hotkeys.custom.shortcut]
+    carbonKeyCode = 4
+    carbonModifiers = 6912
+
+[[hotkeys.custom]]
+id = '1964FCBB-6177-4667-A430-605AD3E8DAED'
+presentation = 'auto'
+
+    [hotkeys.custom.command]
+    actionIdentifier = 'TunaCore.CommonActionsCatalog.Browse'
+    subjectIdentifier = 'Tuna.Internal.ClipboardProxyCatalog.Clipboard History'
+
+    [hotkeys.custom.shortcut]
+    carbonKeyCode = 9
+    carbonModifiers = 6912
+
+[[hotkeys.custom]]
+id = '27548D8F-072C-473E-A42A-CAA08031BD86'
+presentation = 'auto'
+
+    [hotkeys.custom.command]
+    actionIdentifier = 'TunaCore.CommonActionsCatalog.Run'
+    subjectIdentifier = 'TunaSystem.ColorToolsCatalog.Pick Color'
+
+    [hotkeys.custom.shortcut]
+    carbonKeyCode = 35
+    carbonModifiers = 6912
+
+[[hotkeys.custom]]
+id = '28238220-4CA4-474F-8CCB-583C8FECCABF'
+presentation = 'auto'
+
+    [hotkeys.custom.command]
+    actionIdentifier = 'TunaCore.CommonActionsCatalog.Run'
+    subjectIdentifier = 'TunaAutomation.SystemTasksCatalog.Sleep'
+
+    [hotkeys.custom.shortcut]
+    carbonKeyCode = 1
+    carbonModifiers = 6912
 
 [settings]
 activationDoublePressTrigger = 'leftCommand'
+appPresentationMode = 'never'
 catalogPeriodicRescanIntervalMinutes = 60
-leaderModeCheatsheetBehavior = 'never'
-leaderModeCheatsheetDelayMS = 3000
-leaderModeCheatsheetShowDetails = false
-leaderModeModifierConfiguration = 'optionGroupControlSticky'
-leaderModeModifierTrigger = 'rightOption'
-leaderModeThemeStyle = 'breadcrumb'
+comboModeCheatsheetBehavior = 'never'
+comboModeCheatsheetDelayMS = 3000
+comboModeCheatsheetShowDetails = false
+comboModeDoublePressTrigger = 'rightCommand'
+comboModeModifierConfiguration = 'optionGroupControlSticky'
+comboModeModifierTrigger = 'rightOption'
+comboModeThemeStyle = 'breadcrumb'
+comboModeTriggerType = 'disabled'
 mainWindowAnimationsEnabled = false
 physicalHyperKeyQuickPressBehavior = 'togglesCapsLock'
 physicalHyperKeySource = 'capsLock'
@@ -142,21 +481,25 @@ resultListNavigationBindings = 'vimStyle'
 screenPreference = 'primary'
 shelfAutoCloseWhenTasksComplete = true
 spacebarBehavior = 'switchToTextMode'
-themeIdentifier = 'com.brnbw.tuna.themes.NormieBar'
+textModeDoublePressTrigger = 'leftOption'
+themeIdentifier = 'com.brnbw.tuna.themes.nuggets'
 
 [[smartLinks.entries]]
 enabled = true
 name = 'DuckDuckGo'
+requiresInput = true
 template = 'https://duckduckgo.com/?q={{input}}'
 
 [[smartLinks.entries]]
 enabled = true
 name = 'GIF'
+requiresInput = true
 template = 'https://giphy.com/search/{{input}}'
 
 [[smartLinks.entries]]
 enabled = true
 name = 'YouTube'
+requiresInput = true
 template = 'https://www.youtube.com/results?search_query={{input}}'
 
 [[catalogSettings]]
@@ -172,6 +515,18 @@ catalogIdentifier = 'TunaEmoji.EmojiCatalog'
     EmojiSkinTone = 'default'
 
 [[catalogSettings]]
+catalogIdentifier = 'TunaPrompts.AIPromptCatalog'
+
+    [catalogSettings.values]
+    Provider = 'apple'
+
+[[catalogSettings]]
+catalogIdentifier = 'TunaSystem.WindowManagementCatalog'
+
+    [catalogSettings.values]
+    Cycling = 'sizes'
+
+[[catalogSettings]]
 catalogIdentifier = 'com.brnbw.tuna.plugins.emoji'
 
     [catalogSettings.values]
@@ -179,6 +534,12 @@ catalogIdentifier = 'com.brnbw.tuna.plugins.emoji'
 
 [[catalogSettings]]
 catalogIdentifier = 'com.brnbw.tuna.themes.default'
+
+    [catalogSettings.values]
+    ThemeTint = 'system'
+
+[[catalogSettings]]
+catalogIdentifier = 'com.brnbw.tuna.themes.nuggets'
 
     [catalogSettings.values]
     ThemeTint = 'system'
