@@ -48,8 +48,8 @@ searchQueryAppSelections:
     lastPickedAt: 2026-06-06T20:06:43Z
   h:
     bundleID: net.imput.helium
-    count: 16
-    lastPickedAt: 2026-06-11T11:55:30Z
+    count: 26
+    lastPickedAt: 2026-06-12T14:44:30Z
   he:
     bundleID: net.imput.helium
     count: 2
@@ -88,8 +88,8 @@ searchQueryAppSelections:
     lastPickedAt: 2026-06-08T10:24:21Z
   ok:
     bundleID: com.microsoft.Outlook
-    count: 7
-    lastPickedAt: 2026-06-11T06:02:38Z
+    count: 8
+    lastPickedAt: 2026-06-12T06:59:01Z
   out:
     bundleID: com.microsoft.Outlook
     count: 1
@@ -108,8 +108,8 @@ searchQueryAppSelections:
     lastPickedAt: 2026-06-08T13:20:15Z
   s:
     bundleID: com.apple.Safari
-    count: 15
-    lastPickedAt: 2026-06-11T06:12:27Z
+    count: 16
+    lastPickedAt: 2026-06-12T06:18:59Z
   sa:
     bundleID: com.apple.Safari
     count: 2
@@ -132,8 +132,8 @@ searchQueryAppSelections:
     lastPickedAt: 2026-06-09T11:26:27Z
   sl:
     bundleID: com.tinyspeck.slackmacgap
-    count: 17
-    lastPickedAt: 2026-06-11T06:39:38Z
+    count: 23
+    lastPickedAt: 2026-06-12T13:08:46Z
   sla:
     bundleID: com.tinyspeck.slackmacgap
     count: 1
@@ -144,8 +144,8 @@ searchQueryAppSelections:
     lastPickedAt: 2026-06-06T19:37:58Z
   sp:
     bundleID: com.spotify.client
-    count: 10
-    lastPickedAt: 2026-06-10T11:16:45Z
+    count: 15
+    lastPickedAt: 2026-06-12T09:18:18Z
   ss:
     bundleID: com.apple.systempreferences
     count: 6
@@ -160,12 +160,12 @@ searchQueryAppSelections:
     lastPickedAt: 2026-06-06T20:10:17Z
   t:
     bundleID: com.mitchellh.ghostty
-    count: 7
-    lastPickedAt: 2026-06-09T20:54:03Z
+    count: 8
+    lastPickedAt: 2026-06-11T20:39:21Z
   te:
     bundleID: com.microsoft.teams2
-    count: 20
-    lastPickedAt: 2026-06-11T06:58:24Z
+    count: 23
+    lastPickedAt: 2026-06-12T10:52:37Z
   tea:
     bundleID: com.microsoft.teams2
     count: 1

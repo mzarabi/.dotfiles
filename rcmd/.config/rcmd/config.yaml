@@ -22,6 +22,7 @@ ignoredApps:
 - nl.superalloy.oss.terminal-notifier
 appsWhereRcmdIsPaused: []
 ignoredKeys: []
+searchPins: {}
 triggers:
   triggerKeys: [rcmd]
   windowTriggerKeys: [rshift, rcmd]
@@ -32,9 +33,9 @@ triggers:
   alwaysHideOthers: false
 appSwitcher:
   showAppSwitcher: false
-  appSwitcherOSDDelay: 350
+  appSwitcherOSDDelay: 700
   appSwitcherFeatures: [runningApps]
-  switcherScreenPlacement: {position: center, offsetX: 0, offsetY: 0}
+  switcherScreenPlacement: {position: bottomRight, offsetX: 0, offsetY: 0}
   osdSize: {width: 400, height: 400}
   actionKeys: {hideKey: minus, actionKey: equal, exposeKey: section, enableHideAndActionKeys: true}
   hideOnlyFocusedAppOnMinus: true
@@ -61,7 +62,7 @@ windowSwitcher:
   windowSwitcherFeatures: [lastWindow, windows, windowActions]
   windowSwitcherDimFocused: false
   windowSwitcherPlacement: {mirrorAppSwitcher: true}
-  osdSize: {width: 700, height: 400}
+  osdSize: {width: 400, height: 300}
   actionKeys: {windowMinimizeKey: minus, windowAssignKey: equal, enableWindowMinimizeAndAssignKeys: false}
   minimizeOnlyFocusedWindowOnMinus: true
 stageSwitcher:
@@ -73,13 +74,13 @@ stageSwitcher:
   stageSwitcherPlacement: {mirrorAppSwitcher: true}
 tabCycle:
   enableTabCycle: true
-  tabCycleScope: allWindows
-  tabCycleSearchScope: allWindows
+  tabCycleScope: auto
+  tabCycleSearchScope: auto
   tabCycleInclude: [minimized, hidden]
   tabCycleFocusOnKeyUp: true
   hijackCommandTab: false
-  windowCycleKey: section
+  windowCycleKey: rightBracket
   enableWindowCycleKey: true
   hijackWindowCycleHotkey: false
 spaces: {spaceMode: single, createMissingSpaces: true, osdOnActiveSpaceOnly: false, enableInstantSpaceSwitching: true}
-general: {whenAlreadyFocusedAction: Hide, focusBehaviour: allWindows, focusOnKeyUp: false, fuzzySearch: true, showMenubarAppsInSearch: true, hidePerAppSettings: false}
+general: {whenAlreadyFocusedAction: CycleWindows, focusBehaviour: allWindows, focusOnKeyUp: false, fuzzySearch: true, showMenubarAppsInSearch: true, hidePerAppSettings: false}
