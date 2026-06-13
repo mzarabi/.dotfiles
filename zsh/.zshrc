@@ -1,11 +1,28 @@
+# --- Homebrew ---
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export HOMEBREW_NO_AUTO_UPDATE=1
 export HOMEBREW_NO_ANALYTICS=1
 
 # --- Environment Variables ---
 export PATH="$HOME/.local/bin:$PATH"
+typeset -U path cdpath fpath manpath
+
+export EDITOR="zed"
+export VISUAL="zed"
+
 export JBOSS_HOME="$HOME/Dev/jboss/jboss-eap-7.3"
 export EAP_7_HOME="$HOME/Dev/jboss/jboss-eap-7.3"
+
+# --- History ---
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=100000
+SAVEHIST=100000
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt SHARE_HISTORY
+setopt APPEND_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+
 
 # --- Zoxide ---
 eval "$(zoxide init zsh)"
@@ -30,6 +47,27 @@ _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
 
+# --- Completions ---
+autoload -Uz compinit
+zmodload zsh/complist
+
+# Rebuild compdump only once per day for performance
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null) ]; then
+  compinit
+else
+  compinit -C
+fi
+
+
+bindkey -M menuselect '^[' undo
+
+# --- Plugins ---
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# --- Key Bindings ---
+bindkey '^ ' autosuggest-accept
+
 # --- Aliases ---
 alias rz="source ~/.zshrc"
 alias ez="zed ~/.zshrc"
@@ -38,38 +76,43 @@ alias py="python3"
 alias vim="nvim"
 alias bup="brew update && brew upgrade && brew cleanup"
 alias bun="brew uninstall --zap"
-alias ls='eza --icons -F -H --group-directories-first'
-alias ll='ls -alF'
-alias tree='eza --tree --icons'
-alias lg="lazygit"
-alias lsh="lazyssh"
-alias ld="lazydocker"
-alias jboss="cd ~/Dev/jboss/jboss-eap-7.3/bin && sh standalone.sh"
-alias ff="fastfetch"
-alias cat="bat"
+alias cat="bat --paging=never"
 alias mci="mvn clean install"
 alias mq="mvn quarkus:dev"
 alias y="yazi"
-alias gst='git status'
-alias gcn!='git commit --verbose --no-edit --amend'
+alias lg="lazygit"
+alias ls='eza --icons -F -H --group-directories-first'
+alias ll='ls -alF'
+alias tree='eza --tree --icons'
 
+
+# Git aliases
+alias gst='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gcn!='git commit --verbose --no-edit --amend'
+alias gp='git push'
+alias gl='git pull'
+alias gco='git checkout'
+alias gb='git branch'
 
 # --- Functions ---
+jboss() {
+  local jboss_bin="${JBOSS_HOME:-$HOME/Dev/jboss/jboss-eap-7.3}/bin"
+  cd "$jboss_bin" && sh standalone.sh
+}
+
+recomp() {
+  rm -f ~/.zcompdump
+  compinit
+}
+
 source ~/.config/zsh/functions.zsh
-source "$HOME/repos/hertz/tooling-environment/developer-utils/sh-source/tools.sh"
 
-
-autoload -Uz compinit
-compinit
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-zstyle ':completion:*' menu select
-
-# --- Key Bindings ---
-bindkey '^ ' autosuggest-accept
+[[ -f "$HOME/repos/hertz/tooling-environment/developer-utils/sh-source/tools.sh" ]] && \
+  source "$HOME/repos/hertz/tooling-environment/developer-utils/sh-source/tools.sh"
 
 # --- Starship ---
 precmd() { precmd() { echo "" } }
-alias clear="precmd() { precmd() { echo } } && clear"
-
+  
 eval "$(starship init zsh)"
