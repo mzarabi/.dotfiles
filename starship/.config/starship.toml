@@ -11,41 +11,62 @@ add_newline = false
 success_symbol = '[➜](green)'
 error_symbol = '[➜](green)'
 
+# ── Directory ──
+[directory]
+truncation_length = 4
+truncate_to_repo = true
+style = "bold lavender"
+
+# ── Git ──
 [git_branch]
+symbol = " "
 style = "bold mauve"
 
 [git_status]
 style = 'bold peach'
 
+[git_commit]
+commit_hash_length = 7
+only_detached = true
+style = "bold mauve"
+
+[git_state]
+style = 'bold red'
+
 [git_metrics]
 added_style = 'bold green'
 deleted_style = 'bold red'
+only_nonzero_diffs = true
 
-[directory]
-truncation_length = 4
-style = "bold lavender"
 
+# ── Java ──
+[java]
+format = 'using [ $version]($style) '
+style = 'bold red'
+version_format = '${major}'
+detect_files = ['pom.xml', 'build.gradle', 'build.gradle.kts', 'build.xml', 'settings.gradle', 'settings.gradle.kts']
+
+# ── Node.js ──
+[nodejs]
+format = 'using [ $version]($style) '
+style = 'bold green'
+detect_files = ['package.json', '.node-version']
+version_format = '${major}'
+
+# ── Maven ──
+[maven]
+disabled = true
+
+# ── Docker ──
+[docker_context]
+disabled = true
+
+# ── Package ──
 [package]
 disabled = true
 
-[java]
-format = 'using [(${version} )]($style)'
-style = 'bold red'
-version_format = '${raw}'
-
-[nodejs]
-format = 'using [(${version} )]($style)'
-detect_files = ['package.json']
-style = 'bold green'
-version_format = '${raw}'
-
+# ── Python ──
 [python]
-format = 'using [(${version} )]($style)'
-style = 'bold green'
-version_format = '${raw}'
-disabled = true
-
-[docker_context]
 disabled = true
 
 

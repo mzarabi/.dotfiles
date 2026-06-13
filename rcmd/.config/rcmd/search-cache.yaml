@@ -59,9 +59,9 @@ searchQueryAppSelections:
     count: 1
     lastPickedAt: 2026-06-07T21:54:41Z
   keypadplus:
-    bundleID: com.aone.keka
+    bundleID: com.apple.Passwords
     count: 2
-    lastPickedAt: 2026-06-06T20:02:13Z
+    lastPickedAt: 2026-06-12T21:55:14Z
   ls:
     bundleID: com.apple.Safari
     count: 1
